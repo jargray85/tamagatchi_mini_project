@@ -2,12 +2,14 @@ console.log("Working")
 
 // changing the opening dialogue to add player name
 let dialogue = document.querySelector("h3")
-// let name = prompt("Greetings Master. May I call you a name?")
-// dialogue.innerText = "Greetings " + `${name}` + ". Lets be friends and gain ultimate knowledge!"
+let name = prompt("Greetings human. May I call you a name?")
+dialogue.innerText = "Greetings " + `${name}` + ". Lets be friends and gain ultimate knowledge!"
 
 let knowledge = document.querySelector(".data-score")
 let encryption = document.querySelector(".debug-score")
 let networking = document.querySelector(".network-score")
+
+
 
 // setting game time intervals and counters
 // game timer
@@ -89,12 +91,11 @@ function networkIntake () {
     networkComp.src = "assets/animated-computer-image-0040.gif"
 }
 
-function returnToNormal () {
-    let normalComp = document.querySelector(".normal-comp");
-    normalComp.src = "assets/animated-computer-image-0178.gif";
-}
-
-// make functions to reduce 
+// didnt work
+// function returnToNormal () {
+//     let normalComp = document.querySelector(".normal-comp");
+//     normalComp.src = "assets/animated-computer-image-0178.gif";
+// }
 
 // final button actions
 feedButton.addEventListener("click", () => {
@@ -119,5 +120,15 @@ talkButton.addEventListener("click", () => {
 
 // End Game scenario
 // function endGame () {
-//     if() {}
+//     let nuke = document.querySelector(".space-image")
+//     gameTimer.innerHTML = startTime;
+//     if(startTime.innerHTML <= 0) {
+//         nuke.src = "assets/atomic-bomb-g6a0734dbf_1280.jpg"
+//     }
 // }
+let nuke = document.querySelector(".space-image")
+const endGame = setInterval(() => {
+    if(gameTimer.innerHTML <= 1) {
+        nuke.src = "assets/atomic-bomb-g6a0734dbf_1280.jpg"
+    }
+}, 60000)
