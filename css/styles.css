@@ -13,7 +13,7 @@ header {
 
 .comp-dialogue {
     position: relative;
-    color: azure;
+    color: darkturquoise;
     text-align: center;
     font-family: monospace;
     margin-top: 5%;
@@ -78,12 +78,15 @@ header {
     font-size: xx-large;
 }
 
+.image-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .normal-comp {
     position: relative;
     display: flex;
-    margin-top: 2%;
-    margin-left: 40%;
-    margin-bottom: 2%;
 }
 
 .ai-name {
