@@ -31,7 +31,7 @@ const countDown = setInterval (() => {
 
 const feedTimer = setInterval(() => {
     knowledge.innerHTML--;
-    if(knowledge.innerHTML <= 0) {
+    if(knowledge.innerHTML <= 0 || gameTimer.innerHTML <= 1) {
         clearInterval(feedTimer);
     }
 }, 6000)  
@@ -41,7 +41,7 @@ const feedTimer = setInterval(() => {
 
 const debugTimer = setInterval(() => {
     encryption.innerHTML--;
-    if(encryption.innerHTML <= 0) {
+    if(encryption.innerHTML <= 0 || gameTimer.innerHTML <= 1) {
         clearInterval(debugTimer)
     }
 }, 10000)
@@ -51,7 +51,7 @@ const debugTimer = setInterval(() => {
 // debugTimer()
 const networkTimer = setInterval(() => {
     networking.innerHTML--;
-    if(networking.innerHTML <= 0) {
+    if(networking.innerHTML <= 0 || gameTimer.innerHTML <= 1) {
         clearInterval(networkTimer)
     }
 }, 15000)
