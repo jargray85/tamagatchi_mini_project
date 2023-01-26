@@ -1,0 +1,113 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    text-align: center;
+    font-family: monospace;
+}
+
+.space-image {
+    position: absolute;
+}
+
+.comp-dialogue {
+    position: relative;
+    color: azure;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+.counters {
+    color: azure;
+    font-family: monospace;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data-score {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+.debug-score {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+.network-score {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+.knowledge-intake {
+    text-align: center;
+    margin-top: 1%;
+    font-size: xx-large;
+}
+
+.file-encryption {
+    text-align: center;
+    margin-top: 1%;
+    font-size: xx-large;
+}
+
+.networking {
+    text-align: center;
+    margin-top: 1%;
+    font-size: xx-large;
+}
+
+.game-timer {
+    position: relative;
+}
+
+.time-left {
+    position: relative;
+    display: flex;
+    color: gold;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: xx-large;
+}
+
+.normal-comp {
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.ai-name {
+    position: relative;
+    text-align: center;
+    color: red;
+    font-size: larger;
+}
+
+.buttons {
+    margin-top: 5%;
+}
+
+.feed {
+    position: relative;
+    margin-left: 32%;
+}
+
+.talk {
+    position: relative;
+}
+
+.debug {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
