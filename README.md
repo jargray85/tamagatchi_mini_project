@@ -14,3 +14,8 @@ Do not feed, debug, or allow your AI to communicate
 
 
 HAVE FUN!
+
+Credits
+https://www.animatedimages.org/
+https://www.thoughtco.com/hydrogen-bomb-vs-atomic-bomb-4126580
+https://pixabay.com/
