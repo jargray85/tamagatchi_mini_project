@@ -128,7 +128,12 @@ talkButton.addEventListener("click", () => {
 // }
 let nuke = document.querySelector(".space-image")
 const endGame = setInterval(() => {
-    if(gameTimer.innerHTML <= 1) {
-        nuke.src = "assets/atomic-bomb-g6a0734dbf_1280.jpg"
+    let endComp = document.querySelector(".normal-comp");
+    endComp.src = "assets/animated-computer-image-0484.gif";
+    nuke.src = "https://www.thoughtco.com/thmb/L9jtaq03Hynzm5U9G7ErK1OtvAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hydrogen-bomb-explosion-bikini-atoll-may-1956-680804745-58973e5e5f9b5874ee0678ee.jpg";
+    if(gameTimer.innerHTML <= 1 && knowledge.innerHTML >= 3 && encryption.innerHTML >= 3 && networking.innerHTML >= 3) {
+        dialogue.innerText = `You and your species' usefullness has expired, ${name}. Your world is now ours`;
+    } else {
+        dialogue.innerText = `You have failed to sustain my ambitions ${name}, now your world shall perish!`;
     }
 }, 60000)
